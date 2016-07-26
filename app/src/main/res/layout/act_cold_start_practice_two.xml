@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.brioal.libmanager.activity.ColdStartPracticeTwo">
+
+    <LinearLayout
+        android:id="@+id/act_cold_one_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/act_cold_one_title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:alpha="0"
+            android:gravity="center"
+            android:text="冷启动优化实例2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/act_cold_one_title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:alpha="0"
+            android:gravity="center"
+            android:text="功能选择界面"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/act_cold_one_button1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:text="Button1"
+            android:textAllCaps="false"
+            android:theme="@style/Button"/>
+
+        <Button
+            android:id="@+id/act_cold_one_button2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:text="Button1"
+            android:textAllCaps="false"
+            android:theme="@style/Button"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/act_cold_one_head"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/ic_launcher_icon"
+        />
+</RelativeLayout>

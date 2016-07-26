@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+//网络请求类
+//Bmob后台操作类
+//Glide操作类
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.1"
+    sourceSets {
+        main.jniLibs.srcDirs = ['libs']
+    }
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:24.1.1'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/Bmob_Push_V0.9beta_20160520.jar')
+    compile files('libs/BmobSDK_V3.4.7_0527.jar')
+    compile files('libs/glide-3.5.1.jar')
+    compile files('libs/jsoup-1.9.1.jar')
+    compile files('libs/okhttp-3.2.0.jar')
+    compile files('libs/okio-1.7.0.jar')
+    compile files('libs/umeng_social_sdk.jar')
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+}

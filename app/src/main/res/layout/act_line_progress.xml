@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.brioal.libmanager.activity.LineProgressActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.brioal.uilib.progressbar_text.LineProgressWithText
+            android:id="@+id/act_line_progress_pb_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
+            app:line_progress_bar_height="5dp"
+            app:line_progress_reach_color="#12d432"
+            app:line_progress_text_color="@color/colorBlack"
+            app:line_progress_unreach_color="#747474"/>
+
+        <com.brioal.uilib.progressbar_text.LineProgressWithText
+            android:id="@+id/act_line_progress_pb_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
+            app:line_progress_bar_height="2dp"
+            app:line_progress_reach_color="#e68320"
+            app:line_progress_text_color="@color/colorBlack"
+            app:line_progress_unreach_color="#a73b3b"/>
+
+        <com.brioal.uilib.progressbar_text.SpinnerProgressBarWithText
+            android:id="@+id/act_line_progress_pb_3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            app:spinner_progress_line_center_color="@color/colorWhite"
+            app:spinner_progress_line_progress="20"
+            app:spinner_progress_line_reached_color="@color/colorAccent"
+            app:spinner_progress_line_start_angle="40"
+            app:spinner_progress_line_text_color="@color/colorLightBlack"
+            app:spinner_progress_line_unreach_color="@color/colorBlue"
+            app:spinner_progress_line_width="2dp"
+            app:spinner_progress_radicus="20dp"/>
+
+        <com.brioal.uilib.progressbar_text.SpinnerProgressBarWithText
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            app:spinner_progress_line_center_color="@color/colorWhite"
+            app:spinner_progress_line_progress="20"
+            app:spinner_progress_line_reached_color="@color/colorPrimary"
+            app:spinner_progress_line_start_angle="40"
+            app:spinner_progress_line_text_color="@color/colorLightBlack"
+            app:spinner_progress_line_unreach_color="@color/colorBlue"
+            app:spinner_progress_line_width="4dp"
+            app:spinner_progress_radicus="20dp"/>
+
+    </LinearLayout>
+</RelativeLayout>
