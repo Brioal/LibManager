@@ -10,12 +10,13 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.brioal.baselib.util.SizeUtil;
 import com.brioal.libmanager.R;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class ColdStartPracticeTwo extends TextBaseActivity {
+public class ColdStartPracticeTwo extends TestActivity {
 
     @Bind(R.id.act_cold_one_title1)
     TextView mTvTitle1;
@@ -57,7 +58,7 @@ public class ColdStartPracticeTwo extends TextBaseActivity {
 
     //开始动画
     private void animation() {
-        ViewCompat.animate(mIvHead).translationY(-250).setStartDelay(300).setDuration(1000).setInterpolator(new AccelerateDecelerateInterpolator()).start(); //head开始
+        ViewCompat.animate(mIvHead).translationY(-SizeUtil.Dp2Px(mContext,150)).setStartDelay(300).setDuration(1000).setInterpolator(new AccelerateDecelerateInterpolator()).start(); //head开始
         for (int i = 0; i < mContainer.getChildCount(); i++) {
             View v = mContainer.getChildAt(i);
             ViewPropertyAnimatorCompat viewAnimator = null;

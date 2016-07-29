@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import com.brioal.libmanager.R;
 
-public class CircleHeadActivity extends TextBaseActivity {
+public class CircleHeadActivity extends TestActivity {
     static {
         title = "圆点内显示文字的自定义View";
     }

@@ -11,7 +11,7 @@ import com.brioal.libmanager.R;
  * 3.顶层容器换成ScrollView
  * 4.输入框获取焦点时隐藏上层某些组件
  */
-public class SoftInputAdjustActivity extends TextBaseActivity {
+public class SoftInputAdjustActivity extends TestActivity {
     static {
         title = "软件盘遮挡解决办法";
     }

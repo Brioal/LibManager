@@ -33,7 +33,7 @@ public class LineProgressWithText extends ProgressBar {
     private int mReachColor; //已完成的颜色
     private int mBarHeight; //线条的高度
     private int mRealWidth; //最终绘制的线条宽度
-    private int mTextOffset = SizeUtil.Dp2Px(getContext(), DEFAULT_TEXT_OFFSET); //文字的边距
+    private float mTextOffset = SizeUtil.Dp2Px(getContext(), DEFAULT_TEXT_OFFSET); //文字的边距
 
     private Paint mPaint = new Paint();
     private int progress;

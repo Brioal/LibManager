@@ -18,7 +18,7 @@ import butterknife.ButterKnife;
  * 2.根据offset来获取渐变的颜色值
  * 3.设置ViewPgaer的背景和标题栏为指定的颜色
  */
-public class GradualGuideActivity extends TextBaseActivity {
+public class GradualGuideActivity extends TestActivity {
     static {
         title = "背景渐变的引导界面";
     }

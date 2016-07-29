@@ -18,6 +18,7 @@ import android.widget.TextView;
 
 import com.brioal.baselib.base.BaseActivity;
 import com.brioal.libmanager.adapter.MainTestAdapter;
+import com.brioal.libmanager.entity.DemoEntity;
 import com.brioal.libmanager.itemanimator.ItemAnimatorFactory;
 import com.brioal.libmanager.tool.DataLoader;
 
@@ -44,7 +45,7 @@ public class MainActivity extends BaseActivity {
     ImageView mHead;
     private int mContentViewHeight;
     private int mScreenWidth;
-    private List<String> mList;
+    private List<DemoEntity> mList;
     private MainTestAdapter mAdapter;
 
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PaintBoard">
+        <!--画板背景颜色-->
+        <attr name="paintBoardColor" format="color"/>
+        <!--画笔颜色-->
+        <attr name="paintPaintColor" format="color"/>
+        <!--画笔宽度-->
+        <attr name="paintPaintStrike" format="dimension"/>
+    </declare-styleable>
+</resources>

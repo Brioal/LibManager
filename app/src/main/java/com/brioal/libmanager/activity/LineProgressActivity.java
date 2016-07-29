@@ -16,7 +16,7 @@ import butterknife.ButterKnife;
 /**
  * 线条带文字的进度条测试类
  */
-public class LineProgressActivity extends TextBaseActivity {
+public class LineProgressActivity extends TestActivity {
 
 
     static {

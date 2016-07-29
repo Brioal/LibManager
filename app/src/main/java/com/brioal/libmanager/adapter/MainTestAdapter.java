@@ -1,6 +1,5 @@
 package com.brioal.libmanager.adapter;
 
-import android.app.Activity;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -8,23 +7,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.brioal.libmanager.MainActivity;
 import com.brioal.libmanager.R;
-import com.brioal.libmanager.activity.AdTextViewActivity;
-import com.brioal.libmanager.activity.CircleHeadActivity;
-import com.brioal.libmanager.activity.CirclePointActivity;
-import com.brioal.libmanager.activity.ColdStartPracticeOne;
-import com.brioal.libmanager.activity.ColdStartPracticeTwo;
-import com.brioal.libmanager.activity.GradualGuideActivity;
-import com.brioal.libmanager.activity.LineProgressActivity;
-import com.brioal.libmanager.activity.SoftInputAdjustActivity;
+import com.brioal.libmanager.activity.TestActivity;
+import com.brioal.libmanager.entity.DemoEntity;
 
 import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-/**
+/**主界面RecyclerView适配器
  * Created by Brioal on 2016/7/20.
  */
 
@@ -32,15 +24,15 @@ public class MainTestAdapter extends RecyclerView.Adapter<MainTestAdapter.TestVi
 
 
     private Context mContext;
-    private List<String> mList;
+    private List<DemoEntity> mList;
 
 
-    public MainTestAdapter(Context context, List<String> list) {
+    public MainTestAdapter(Context context, List<DemoEntity> list) {
         mContext = context;
         mList = list;
     }
 
-    public void addAll(List<String> items) {
+    public void addAll(List<DemoEntity> items) {
         int pos = getItemCount();
         mList.addAll(items);
         notifyItemRangeInserted(pos, mList.size());
@@ -53,40 +45,12 @@ public class MainTestAdapter extends RecyclerView.Adapter<MainTestAdapter.TestVi
 
     @Override
     public void onBindViewHolder(TestViewHolder holder, final int position) {
-        holder.mTextView.setText(mList.get(position));
+        final DemoEntity entity = mList.get(position);
+        holder.mTextView.setText(entity.getDesc());
         holder.mTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switch (position) {
-                    case 0:
-                        CirclePointActivity.startActivity(mContext, CirclePointActivity.class);
-                        break;
-                    case 1:
-                        GradualGuideActivity.startActivity(mContext, GradualGuideActivity.class);
-                        break;
-                    case 2:
-                        SoftInputAdjustActivity.startActivity(mContext, SoftInputAdjustActivity.class);
-                        break;
-                    case 3:
-                        CircleHeadActivity.startActivity(mContext, CircleHeadActivity.class);
-                        break;
-                    case 4:
-                        LineProgressActivity.startActivity(mContext, LineProgressActivity.class);
-                        break;
-                    case 5:
-                        AdTextViewActivity.startActivity(mContext, AdTextViewActivity.class);
-                        break;
-                    case 6:
-                        ColdStartPracticeOne.startActivity(mContext, ColdStartPracticeOne.class);
-                        break;
-                    case 7:
-                        ColdStartPracticeTwo.startActivity(mContext, ColdStartPracticeTwo.class);
-                        break;
-                    case 8:
-                        MainActivity.startActivity(mContext, MainActivity.class);
-                        ((Activity) mContext).finish();
-                        break;
-                }
+                TestActivity.startActivity(mContext, entity.getclass());
 
             }
         });
