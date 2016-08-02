@@ -7,18 +7,21 @@ import com.brioal.libmanager.activity.CircleHeadActivity;
 import com.brioal.libmanager.activity.CirclePointActivity;
 import com.brioal.libmanager.activity.ColdStartPracticeOne;
 import com.brioal.libmanager.activity.ColdStartPracticeTwo;
+import com.brioal.libmanager.activity.ElasticScrollActivity;
 import com.brioal.libmanager.activity.GradualGuideActivity;
 import com.brioal.libmanager.activity.LargeImageDisplayActivity;
 import com.brioal.libmanager.activity.LineProgressActivity;
 import com.brioal.libmanager.activity.RetrofitTestActivity;
 import com.brioal.libmanager.activity.SoftInputAdjustActivity;
+import com.brioal.libmanager.activity.SwipeMenuActivity;
 import com.brioal.libmanager.activity.WatchBoardActivity;
 import com.brioal.libmanager.entity.DemoEntity;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**数据加载类
+/**
+ * 数据加载类
  * Created by Brioal on 2016/7/20.
  */
 
@@ -35,6 +38,8 @@ public class DataLoader {
     //获取本地测试的Activity列表
     public List<DemoEntity> getTestList() {
         List<DemoEntity> list = new ArrayList<>();
+        list.add(new DemoEntity("侧滑菜单", SwipeMenuActivity.class));
+        list.add(new DemoEntity("弹性滑动测试类", ElasticScrollActivity.class));
         list.add(new DemoEntity("自定义View实现手表表盘", WatchBoardActivity.class));
         list.add(new DemoEntity("自定义画板", BoardPaintActivity.class));
         list.add(new DemoEntity("Retrofit实践", RetrofitTestActivity.class));

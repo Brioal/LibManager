@@ -16,7 +16,7 @@ import java.util.List;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class AdTextViewActivity extends TestActivity {
+public class AdTextViewActivity extends TestBaseActivity {
 
     static {
         title = "仿京东垂直文字跑马灯";

@@ -10,7 +10,7 @@ import java.io.IOException;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class LargeImageDisplayActivity extends TestActivity {
+public class LargeImageDisplayActivity extends TestBaseActivity {
 
     static {
         title = "大图加载测试";

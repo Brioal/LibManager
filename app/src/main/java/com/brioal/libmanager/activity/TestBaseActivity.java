@@ -9,7 +9,7 @@ import com.brioal.baselib.swipeback.app.SwipeBackActivity;
  * Created by Brioal on 2016/7/21.
  */
 
-public class TestActivity extends SwipeBackActivity {
+public class TestBaseActivity extends SwipeBackActivity {
 
     public static String title = "BaseActivity";
 

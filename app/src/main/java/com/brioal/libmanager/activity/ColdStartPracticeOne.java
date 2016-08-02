@@ -10,7 +10,7 @@ import rx.Observable;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action1;
 
-public class ColdStartPracticeOne extends TestActivity {
+public class ColdStartPracticeOne extends TestBaseActivity {
 
 
     @Override

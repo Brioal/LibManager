@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.brioal.libmanager.R;
-import com.brioal.libmanager.activity.TestActivity;
+import com.brioal.libmanager.activity.TestBaseActivity;
 import com.brioal.libmanager.entity.DemoEntity;
 
 import java.util.List;
@@ -50,7 +50,7 @@ public class MainTestAdapter extends RecyclerView.Adapter<MainTestAdapter.TestVi
         holder.mTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TestActivity.startActivity(mContext, entity.getclass());
+                TestBaseActivity.startActivity(mContext, entity.getclass());
 
             }
         });

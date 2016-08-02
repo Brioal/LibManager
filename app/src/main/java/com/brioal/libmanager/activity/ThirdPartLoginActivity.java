@@ -7,7 +7,7 @@ import android.support.v4.app.ActivityCompat;
 import com.brioal.libmanager.R;
 import com.umeng.socialize.PlatformConfig;
 
-public class ThirdPartLoginActivity extends TestActivity {
+public class ThirdPartLoginActivity extends TestBaseActivity {
     static {
         title = "第三方登录测试";
     }

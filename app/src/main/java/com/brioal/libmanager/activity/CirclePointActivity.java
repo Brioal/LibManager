@@ -7,7 +7,7 @@ import com.brioal.libmanager.R;
 /**
  * 圆点组件测试类
  */
-public class CirclePointActivity extends TestActivity {
+public class CirclePointActivity extends TestBaseActivity {
     static {
         title = "不同颜色的圆形组件";
     }

@@ -16,7 +16,7 @@ import com.brioal.libmanager.R;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class ColdStartPracticeTwo extends TestActivity {
+public class ColdStartPracticeTwo extends TestBaseActivity {
 
     @Bind(R.id.act_cold_one_title1)
     TextView mTvTitle1;

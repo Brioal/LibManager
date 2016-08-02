@@ -4,7 +4,8 @@ import android.content.Context;
 import android.graphics.PointF;
 import android.view.MotionEvent;
 
-/**手势移动检测类
+/**
+ * 手势移动检测类
  * Created by brioal on 16-7-26.
  */
 

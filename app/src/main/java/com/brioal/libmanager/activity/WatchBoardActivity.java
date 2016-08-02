@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import com.brioal.libmanager.R;
 
-public class WatchBoardActivity extends TestActivity {
+public class WatchBoardActivity extends TestBaseActivity {
     static {
         title = "自定义View实现表盘";
     }

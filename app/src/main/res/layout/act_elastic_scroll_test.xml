@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.brioal.libmanager.activity.ElasticScrollActivity">
+    <com.brioal.uilib.elasticscrollview.ElasticScrollView
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_image_01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_image_02"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:scaleType="fitXY"
+            android:clickable="true"
+            android:src="@mipmap/ic_image_03"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:scaleType="fitXY"
+            android:clickable="true"
+            android:src="@mipmap/ic_image_04"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_image_05"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.brioal.uilib.elasticscrollview.ElasticScrollView>
+</LinearLayout>

@@ -14,4 +14,13 @@
         <item>2000</item>
         <item>2500</item>
     </string-array>
+
+    <string-array name="Types">
+        <item>Type1</item>
+        <item>Type2</item>
+        <item>Type3</item>
+        <item>Type4</item>
+        <item>Type5</item>
+        <item>Type6</item>
+    </string-array>
 </resources>

@@ -8,7 +8,7 @@ import com.brioal.uilib.paintboard.PaintBoard;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class BoardPaintActivity extends TestActivity {
+public class BoardPaintActivity extends TestBaseActivity {
     static {
         title = "自定义View画板";
     }
